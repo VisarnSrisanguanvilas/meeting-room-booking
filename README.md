@@ -96,7 +96,3 @@ meeting-room-booking/
 - `/health`: ตรวจสอบสถานะ Server
 
 ---
-
-## 🤝 การสนับสนุน (Contribution)
-
-หากต้องการปรับปรุงหรือแจ้งปัญหา สามารถเปิด Issue หรือส่ง Pull Request ได้ทันที!
