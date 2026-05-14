@@ -1,8 +1,8 @@
 # Meeting Room Booking System
 
-ระบบจองห้องประชุม (Meeting Room Booking System) ที่พัฒนาด้วย **Next.js** สำหรับ Frontend และ **FastAPI** สำหรับ Backend พร้อมระบบจัดการฐานข้อมูลด้วย **SQLModel (SQLite)**
+A Meeting Room Booking System developed with **Next.js** for the Frontend and **FastAPI** for the Backend, using **SQLModel (SQLite)** for database management.
 
-## 🚀 เทคโนโลยีที่ใช้ (Tech Stack)
+## 🚀 Tech Stack
 
 ### Frontend
 - **Framework:** [Next.js](https://nextjs.org/) (App Router)
@@ -19,7 +19,7 @@
 
 ---
 
-## 📂 โครงสร้างโปรเจกต์ (Project Structure)
+## 📂 Project Structure
 
 ```text
 meeting-room-booking/
@@ -41,58 +41,62 @@ meeting-room-booking/
 
 ---
 
-## 🛠️ วิธีการติดตั้งและรันโปรเจกต์ (Getting Started)
+## 🛠️ Getting Started
 
-### 1. การตั้งค่า Backend (FastAPI)
+### 1. Backend Setup (FastAPI)
 
-1. เข้าไปที่โฟลเดอร์ `backend`:
+1. Navigate to the `backend` folder:
    ```bash
    cd backend
    ```
-2. ติดตั้ง Library ที่จำเป็น:
+2. Install the required libraries:
    ```bash
    pip install fastapi uvicorn sqlmodel pydantic-settings python-jose[cryptography] passlib[bcrypt]
    ```
-3. รัน Server:
+3. Run the Server:
    ```bash
    python main.py
    ```
-   *Backend จะรันอยู่ที่: `http://127.0.0.1:8000`*
+   *The backend will be running at: `http://127.0.0.1:8000`*
 
-### 2. การตั้งค่า Frontend (Next.js)
+### 2. Frontend Setup (Next.js)
 
-1. เข้าไปที่โฟลเดอร์ `frontend`:
+1. Navigate to the `frontend` folder:
    ```bash
    cd frontend
    ```
-2. ติดตั้ง Dependencies (แนะนำให้ใช้ `pnpm`):
+2. Install dependencies (pnpm is recommended):
    ```bash
    pnpm install
    ```
-3. รันโปรเจกต์ใน Development Mode:
+3. Run the project in Development Mode:
    ```bash
    pnpm dev
    ```
-   *Frontend จะรันอยู่ที่: `http://localhost:3000`*
+   *The frontend will be running at: `http://localhost:3000`*
 
 ---
 
-## ✨ คุณสมบัติหลัก (Key Features)
+## ✨ Key Features
 
-- **User Authentication:** ระบบสมัครสมาชิกและเข้าสู่ระบบด้วย JWT
-- **Room Management:** จัดการข้อมูลห้องประชุม (เพิ่ม/แก้ไข/ลบ)
-- **Booking System:** ระบบจองห้องประชุม พร้อมปฏิทินแสดงผล (FullCalendar)
-- **Dashboard:** สรุปข้อมูลการจองและสถานะต่างๆ
-- **Responsive Design:** รองรับการแสดงผลทั้งบน Desktop และ Mobile
+- **User Authentication:** Registration and Login system using JWT.
+- **Room Management:** Manage meeting room information (Add/Edit/Delete).
+- **Booking System:** Meeting room booking system with a calendar view (FullCalendar).
+- **Dashboard:** Summary of bookings and various statuses.
+- **Responsive Design:** Optimized for both Desktop and Mobile devices.
+
+---
+
+## 📝 API Details (Backend Routers)
+
+- `/users`: Manage user data.
+- `/login`: Authentication system.
+- `/rooms`: Manage meeting room data.
+- `/bookings`: Manage meeting room bookings.
+- `/health`: Check server status.
 
 ---
 
-## 📝 รายละเอียด API (Backend Routers)
+## 🤝 Contribution
 
-- `/users`: จัดการข้อมูลผู้ใช้
-- `/login`: ระบบยืนยันตัวตน
-- `/rooms`: จัดการข้อมูลห้องประชุม
-- `/bookings`: จัดการข้อมูลการจองห้องประชุม
-- `/health`: ตรวจสอบสถานะ Server
-
----
+If you want to improve the project or report issues, feel free to open an Issue or submit a Pull Request!
