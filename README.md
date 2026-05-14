@@ -95,8 +95,3 @@ meeting-room-booking/
 - `/bookings`: Manage meeting room bookings.
 - `/health`: Check server status.
 
----
-
-## 🤝 Contribution
-
-If you want to improve the project or report issues, feel free to open an Issue or submit a Pull Request!
